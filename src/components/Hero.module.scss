@@ -1,1 +1,82 @@
-a
+@import "./colors";
+
+.hero {
+  max-width: 75vw;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+
+  &-text {
+    flex: 1;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+  }
+
+  &-rate-box {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &-stars {
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  &-title {
+    font-size: 6rem;
+  }
+
+  &-description {
+    line-height: 1.5;
+  }
+
+  &-btns {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  &-offers {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &-img {
+    flex: 1;
+  }
+}
+
+.btn {
+  background-color: $main-purple;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  padding: 2rem;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.link:link,
+.link:visited {
+  color: $main-purple;
+  text-decoration: none;
+  font-weight: 700;
+  padding-bottom: 2px;
+  border-bottom: 2px solid $main-purple;
+}
+
+.offer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero {
+  width: 90%;
+}
