@@ -14,6 +14,24 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.heading-section {* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  line-height: 1;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
 .heading-section {
+  background-color: #fbf8f3;
+}
   background-color: #fbf8f3;
 }
