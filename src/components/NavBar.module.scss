@@ -17,7 +17,56 @@
     display: flex;
     gap: 4rem;
     font-size: 1.6rem;
+@import "./colors";
 
+.nav {
+  max-width: 75vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 2rem;
+  background-color: transparent;
+
+  &-title {
+    font-size: 3rem;
+  }
+
+  &-links {
+    display: flex;
+    gap: 4rem;
+    font-size: 1.6rem;
+
+    &__link a:link,
+    &__link a:visited {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    &__link a:hover {
+      color: $main-purple;
+    }
+  }
+
+  &-buttons {
+    &__button {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      padding: 2rem;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 1.6rem;
+
+      &-sign-up {
+        background-color: $main-purple;
+        color: #fff;
+        border-radius: 8px;
+      }
+    }
+  }
+}
     &__link a:link,
     &__link a:visited {
       color: inherit;
