@@ -3,7 +3,7 @@ import checkmark from "../assets/checkmark.svg";
 import hero from "../assets/hero-illustration.png";
 
 import styles from "./Hero.module.scss";
-
+sssss
 const Hero = () => {
   const stars = (
     <div className={styles["hero-stars"]}>
