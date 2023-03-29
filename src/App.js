@@ -6,10 +6,8 @@ import styles from "./App.module.scss";
 function App() {
   return (
     <Fragment>
-      <div className={styles["heading-section"]}>
-        <NavBar />
-        <Hero />
-      </div>
+      <NavBar />
+      {/* <Hero /> */}
     </Fragment>
   );
 }
