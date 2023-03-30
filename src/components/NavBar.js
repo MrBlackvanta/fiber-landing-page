@@ -8,6 +8,7 @@ const NavBar = () => {
   const phoneNavHandler = () => {
     setisPhoneNavOpened((prev) => !prev);
   };
+
   const links = [
     { id: Math.random(), title: "Community", target: "#" },
     { id: Math.random(), title: "Pricing", target: "#" },
@@ -21,7 +22,7 @@ const NavBar = () => {
           Fiber
         </a>
 
-        <button className={styles["nav-toggler"]}>
+        <button className={styles["nav-toggler"]} onClick={phoneNavHandler}>
           <img src={hamburgerMenu} alt="menu button" />
         </button>
 
@@ -41,6 +42,25 @@ const NavBar = () => {
             Sign Up
           </button>
         </div>
+      </nav>
+
+      <nav
+        className={`${styles["mobile-nav"]} ${styles["mobile-nav__active"]}`}
+      >
+        <ul className={styles["mobile-nav-links"]}>
+          {links.map((link) => (
+            <li key={link.id} className={styles["mobile-nav-links__link"]}>
+              <a href={link.target}>{link.title}</a>
+            </li>
+          ))}
+        </ul>
+
+        <button className={styles["nav-buttons__button"]}>Sign In</button>
+        <button
+          className={`${styles["nav-buttons__button"]} ${styles["nav-buttons__button-sign-up"]}`}
+        >
+          Sign Up
+        </button>
       </nav>
     </div>
   );

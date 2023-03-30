@@ -9,7 +9,7 @@
 }
 
 .nav {
-  max-width: 75vw;
+  width: min(90%, 1320px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,6 +68,44 @@
   }
 }
 
+.mobile-nav {
+  width: min(90%, 1320px);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  transform: translateY(-100%);
+  transition: all 0.3s;
+
+  &-links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__link {
+      padding: 2rem 0;
+      transition: color 0.2s;
+    }
+
+    &__link a:hover {
+      color: $main-purple;
+    }
+
+    &__link a {
+      font-size: 1.6rem;
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+}
+
+.mobile-nav__active {
+  height: auto;
+  transform: translateY(0);
+}
+
 @media only screen and (max-width: 62.5em) {
   .nav-links,
   .nav-buttons {
@@ -76,5 +114,11 @@
 
   .nav-toggler {
     display: block;
+  }
+}
+
+@media only screen and (min-width: 62.5em) {
+  .mobile-nav {
+    display: none;
   }
 }
