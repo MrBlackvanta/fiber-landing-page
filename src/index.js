@@ -8,8 +8,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-123
-123
-123
-123
-123
