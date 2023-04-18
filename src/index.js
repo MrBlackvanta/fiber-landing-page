@@ -7,10 +7,4 @@ root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
-);123
-123
-123
-123
-123
-123
-123
+);
